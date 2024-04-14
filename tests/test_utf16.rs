@@ -1,4 +1,4 @@
-use encdec::prelude::*;
+use ende::prelude::*;
 
 #[test]
 fn test_utf16_encode_in_utf16_1() {

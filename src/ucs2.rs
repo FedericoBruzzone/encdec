@@ -67,7 +67,7 @@ fn print_ucs2_vec<T: AsRef<Vec<u16>>>(ucs2_cp: T, binary_flag: bool) {
 ///
 /// # Example
 /// ```rust
-/// use encdec::prelude::*;
+/// use ende::prelude::*;
 /// let v: Vec<u16> = vec![0xFFEE];
 /// print_ucs2(&v);
 /// ```
@@ -91,7 +91,7 @@ pub fn print_ucs2<T: AsRef<Vec<u16>>>(utf2_cp: T) {
 ///
 /// # Example
 /// ```rust
-/// use encdec::prelude::*;
+/// use ende::prelude::*;
 /// let v: Vec<u16> = vec![0xFFEE];
 /// print_ucs2_b(&v);
 /// ```
@@ -118,7 +118,7 @@ pub fn print_ucs2_b<T: AsRef<Vec<u16>>>(ucs2_cp: T) {
 ///
 /// # Example
 /// ```rust
-/// use encdec::prelude::*;
+/// use ende::prelude::*;
 /// let v: Vec<u32> = vec![0xFFEE]; // Array of code points in unicode
 /// let enc: Vec<u16> = encode_in_ucs2(&v);
 /// assert_eq!(enc, vec![0xFFEE]);
@@ -149,7 +149,7 @@ pub fn encode_in_ucs2<T: AsRef<Vec<u32>>>(unicode_cp: T) -> Vec<u16> {
 ///
 /// # Example
 /// ```rust
-/// use encdec::prelude::*;
+/// use ende::prelude::*;
 /// let v: Vec<u16> = vec![0xFFEE]; // Array of code points in UCS-2
 /// let dec: Vec<u32> = decode_from_ucs2(&v);
 /// assert_eq!(dec, vec![0xFFEE]);

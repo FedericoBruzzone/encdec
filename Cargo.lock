@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "encdec"
+name = "ende"
 version = "0.1.0"

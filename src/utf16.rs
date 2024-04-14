@@ -188,7 +188,7 @@ fn print_utf16_vec<T: AsRef<Vec<u16>>>(utf16_cp: T, binary_flag: bool) {
 ///
 /// # Example
 /// ```rust
-/// use encdec::prelude::*;
+/// use ende::prelude::*;
 /// let v: Vec<u16> = vec![0xD800, 0xDC00];
 /// print_utf16(&v);
 /// ```
@@ -212,7 +212,7 @@ pub fn print_utf16<T: AsRef<Vec<u16>>>(utf16_cp: T) {
 ///
 /// # Example
 /// ```rust
-/// use encdec::prelude::*;
+/// use ende::prelude::*;
 /// let v: Vec<u16> = vec![0xD800, 0xDC00];
 /// print_utf16(&v);
 /// ```
@@ -240,7 +240,7 @@ pub fn print_utf16_b<T: AsRef<Vec<u16>>>(utf16_cp: T) {
 ///
 /// # Example
 /// ```rust
-/// use encdec::prelude::*;
+/// use ende::prelude::*;
 /// let v: Vec<u32> = vec![0x10001]; // Array of code points in unicode
 /// let enc: Vec<u16> = encode_in_utf16(&v);
 /// assert_eq!(enc, vec![0xD800, 0xDC01]);
@@ -269,7 +269,7 @@ pub fn encode_in_utf16<T: AsRef<Vec<u32>>>(unicode_cp: T) -> Vec<u16> {
 ///
 /// # Example
 /// ```rust
-/// use encdec::prelude::*;
+/// use ende::prelude::*;
 /// let v: Vec<u16> = vec![0xD800, 0xDC01]; // Array of code points in UTF-16
 /// let dec: Vec<u32> = decode_from_utf16(&v);
 /// assert_eq!(dec, vec![0x10001]);

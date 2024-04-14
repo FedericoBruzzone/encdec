@@ -1,4 +1,4 @@
-use encdec::prelude::*;
+use ende::prelude::*;
 
 #[test]
 fn test_ucs2_encode_in_ucs2_1() {
